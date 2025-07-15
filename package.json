@@ -16,6 +16,7 @@
     "typecheck": "tsc --noEmit"
   },
   "dependencies": {
+    "@netlify/edge-functions": "^2.3.1",
     "gatsby": "^5.14.1",
     "gatsby-adapter-netlify": "^1.2.0",
     "react": "^18.2.0",
