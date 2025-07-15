@@ -1,14 +1,15 @@
-[[edge_functions]]
-function = "hello"
-path = "/*"
-excludedPath = [
-  "/*.css",
-  "/*.js",
-  "/*json",
-  "/*.png",
-  "/*.jpg",
-  "/*.webp",
-  "/*.svg",
-  "/static/*",
-  "/manifest.webmanifest",
-]
+[context.production]
+    [[edge_functions]]
+        function = "hello"
+        path = "/*"
+        excludedPath = [
+        "/*.css",
+        "/*.js",
+        "/*json",
+        "/*.png",
+        "/*.jpg",
+        "/*.webp",
+        "/*.svg",
+        "/static/*",
+        "/manifest.webmanifest",
+        ]
