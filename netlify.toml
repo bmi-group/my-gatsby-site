@@ -1,15 +1,19 @@
-[context.production]
-    [[edge_functions]]
-        function = "hello"
-        path = "/*"
-        excludedPath = [
-        "/*.css",
-        "/*.js",
-        "/*json",
-        "/*.png",
-        "/*.jpg",
-        "/*.webp",
-        "/*.svg",
-        "/static/*",
-        "/manifest.webmanifest",
-        ]
+[[edge_functions]]
+    function = "hello"
+    path = "/*"
+    excludedPath = [
+    "/*.css",
+    "/*.js",
+    "/*json",
+    "/*.png",
+    "/*.jpg",
+    "/*.webp",
+    "/*.svg",
+    "/static/*",
+    "/manifest.webmanifest",
+    ]
+
+[context.dev]
+  [[edge_functions]]
+  function = "hello"
+  path     = "/__noop_dev_route__/*"
