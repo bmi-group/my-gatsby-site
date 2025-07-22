@@ -13,7 +13,18 @@
     "/manifest.webmanifest",
     ]
 
+    [edge_functions.header]
+    x-no-edge = false
+
+
 [context.dev]
   [[edge_functions]]
   function = "hello"
   path     = "/__noop_dev_route__/*"
+
+
+
+[[headers]]
+  for = "/*"
+  [headers.values]
+    x-no-edge = "yes"
